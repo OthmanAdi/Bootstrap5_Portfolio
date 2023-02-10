@@ -1,0 +1,39 @@
+:root {
+    --C1: #472D2D;
+    --C2: #704F4F;
+    --C3: #FDEEDC;
+    --C4: #CA4E79;
+    --C5: #E7AB79;
+    --C6: #FCFFE7;
+}
+
+.body {
+    height: 100vh;
+}
+
+#Banner, #Skills {
+    height: 100vh;
+    background: cadetblue;
+    background: radial-gradient(ellipse at top, var(--C1),var(--C2), var(--C3)), radial-gradient(ellipse at left, var(--C6), var(--C5), var(--C4));
+    background-size: 400% 400%;
+    -webkit-animation: FluidBG 12s ease-in-out infinite;
+}
+@-webkit-keyframes FluidBG {
+    0%{
+        background-position: 100% 150%;
+    }
+    50%{
+        background-position: 10% 220%;
+    }
+    100%{
+        background-position: 100% 150%;
+    }
+}
+
+.navBarNav {
+    background: white;
+}
+
+.bannerRow, .bannerContainer {
+    height: 100%;
+}
